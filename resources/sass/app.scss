@@ -1,0 +1,18 @@
+@tailwind base;
+
+@tailwind components;
+
+@import "components/general";
+@import "components/button";
+// @import "components/textDegradation";
+
+@tailwind utilities;
+
+// // Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// // Variables
+// @import 'variables';
+
+// // Bootstrap
+// @import '~bootstrap/scss/bootstrap';
