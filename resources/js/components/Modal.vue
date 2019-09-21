@@ -2,9 +2,9 @@
     <div>
         <transition name="fade">
             <div v-show="show" class="overlay">
-                <div class="modal bg-cool-grey-050">
+                <div class="modal sm:rounded-2xl">
                     <button @click="toggleShow()" class="close text-cyan-050">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-close-circle h-12 w-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-close-circle h-16 w-16">
                             <linearGradient x1="0%" y1="0%" x2="100%" y2="200%" id="Gradient1" >
                                 <stop offset="10%" class="gradient-10"/>
                                 <stop offset="30%" class="gradient-30"/>
@@ -55,10 +55,11 @@ export default {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: linear-gradient(118.91deg, #14919B -3.92%, rgba(84, 209, 219, 1) 66.37%);   
+        background-color: rgba(203, 210, 217, 0.8);
+        /* background-image: linear-gradient(118.91deg, #14919B -3.92%, rgba(84, 209, 219, 1) 66.37%);    */
     }
     .modal{
-        @apply relative w-full h-full;
+        @apply relative w-full h-full bg-cool-grey-050;
     }
     .close {
         position: absolute;
@@ -78,20 +79,5 @@ export default {
             width: 90%;
         }
     }
-    .primary {
-        /* fill: #2CB1BC;  */
-        fill: url(#Gradient1);
-    }
-    .secondary {
-        fill: #E0FCFF; 
-    }
-    .gradient-10{
-        stop-color:rgba(0, 62, 107, 0.9);
-    }
-    .gradient-30{
-        stop-color:rgba(10, 108, 116, 0.85);
-    }
-    .gradient-100{
-        stop-color:rgba(20, 145, 155, 0.9);
-    }
+
 </style>

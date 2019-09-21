@@ -1,6 +1,18 @@
 module.exports = {
   theme: {
     extend: {
+      borderRadius: {
+        // 'none': '0',
+        // 'sm': '.125rem',
+        // default: '.25rem',
+        // default: '4px',
+        // 'lg': '.5rem',
+        'xl': '.75rem',
+        '2xl': '1.25rem',
+        // 'full': '9999px',
+        // 'large': '12px',
+      },
+
       colors: {
         // Palette 7
         

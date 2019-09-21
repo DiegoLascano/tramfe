@@ -684,6 +684,10 @@ html {
   }
 }
 
+#modal {
+  transition: 1s ease;
+}
+
 .btn {
   border-radius: 9999px;
   padding-top: 0.75rem;
@@ -700,6 +704,27 @@ html {
 
 .btn-primary:hover {
   background-image: linear-gradient(120deg, #003e6b 20%, #0a6c74 50%, #14919b 100%);
+}
+
+.primary {
+  /* fill: #2CB1BC;  */
+  fill: url(#Gradient1);
+}
+
+.secondary {
+  fill: #E0FCFF;
+}
+
+.gradient-10 {
+  stop-color: rgba(0, 62, 107, 0.9);
+}
+
+.gradient-30 {
+  stop-color: rgba(10, 108, 116, 0.85);
+}
+
+.gradient-100 {
+  stop-color: rgba(20, 145, 155, 0.9);
 }
 
 .sr-only {
@@ -3914,6 +3939,14 @@ html {
   border-radius: 9999px;
 }
 
+.rounded-xl {
+  border-radius: .75rem;
+}
+
+.rounded-2xl {
+  border-radius: 1.25rem;
+}
+
 .rounded-t-none {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -4014,6 +4047,46 @@ html {
   border-bottom-left-radius: 9999px;
 }
 
+.rounded-t-xl {
+  border-top-left-radius: .75rem;
+  border-top-right-radius: .75rem;
+}
+
+.rounded-r-xl {
+  border-top-right-radius: .75rem;
+  border-bottom-right-radius: .75rem;
+}
+
+.rounded-b-xl {
+  border-bottom-right-radius: .75rem;
+  border-bottom-left-radius: .75rem;
+}
+
+.rounded-l-xl {
+  border-top-left-radius: .75rem;
+  border-bottom-left-radius: .75rem;
+}
+
+.rounded-t-2xl {
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+}
+
+.rounded-r-2xl {
+  border-top-right-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+}
+
+.rounded-b-2xl {
+  border-bottom-right-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
+}
+
+.rounded-l-2xl {
+  border-top-left-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
+}
+
 .rounded-tl-none {
   border-top-left-radius: 0;
 }
@@ -4092,6 +4165,38 @@ html {
 
 .rounded-bl-full {
   border-bottom-left-radius: 9999px;
+}
+
+.rounded-tl-xl {
+  border-top-left-radius: .75rem;
+}
+
+.rounded-tr-xl {
+  border-top-right-radius: .75rem;
+}
+
+.rounded-br-xl {
+  border-bottom-right-radius: .75rem;
+}
+
+.rounded-bl-xl {
+  border-bottom-left-radius: .75rem;
+}
+
+.rounded-tl-2xl {
+  border-top-left-radius: 1.25rem;
+}
+
+.rounded-tr-2xl {
+  border-top-right-radius: 1.25rem;
+}
+
+.rounded-br-2xl {
+  border-bottom-right-radius: 1.25rem;
+}
+
+.rounded-bl-2xl {
+  border-bottom-left-radius: 1.25rem;
 }
 
 .border-solid {
@@ -17233,6 +17338,14 @@ html {
     border-radius: 9999px;
   }
 
+  .sm\:rounded-xl {
+    border-radius: .75rem;
+  }
+
+  .sm\:rounded-2xl {
+    border-radius: 1.25rem;
+  }
+
   .sm\:rounded-t-none {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -17333,6 +17446,46 @@ html {
     border-bottom-left-radius: 9999px;
   }
 
+  .sm\:rounded-t-xl {
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+  }
+
+  .sm\:rounded-r-xl {
+    border-top-right-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+  }
+
+  .sm\:rounded-b-xl {
+    border-bottom-right-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+
+  .sm\:rounded-l-xl {
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+
+  .sm\:rounded-t-2xl {
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+  }
+
+  .sm\:rounded-r-2xl {
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+  }
+
+  .sm\:rounded-b-2xl {
+    border-bottom-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+  }
+
+  .sm\:rounded-l-2xl {
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+  }
+
   .sm\:rounded-tl-none {
     border-top-left-radius: 0;
   }
@@ -17411,6 +17564,38 @@ html {
 
   .sm\:rounded-bl-full {
     border-bottom-left-radius: 9999px;
+  }
+
+  .sm\:rounded-tl-xl {
+    border-top-left-radius: .75rem;
+  }
+
+  .sm\:rounded-tr-xl {
+    border-top-right-radius: .75rem;
+  }
+
+  .sm\:rounded-br-xl {
+    border-bottom-right-radius: .75rem;
+  }
+
+  .sm\:rounded-bl-xl {
+    border-bottom-left-radius: .75rem;
+  }
+
+  .sm\:rounded-tl-2xl {
+    border-top-left-radius: 1.25rem;
+  }
+
+  .sm\:rounded-tr-2xl {
+    border-top-right-radius: 1.25rem;
+  }
+
+  .sm\:rounded-br-2xl {
+    border-bottom-right-radius: 1.25rem;
+  }
+
+  .sm\:rounded-bl-2xl {
+    border-bottom-left-radius: 1.25rem;
   }
 
   .sm\:border-solid {
@@ -30553,6 +30738,14 @@ html {
     border-radius: 9999px;
   }
 
+  .md\:rounded-xl {
+    border-radius: .75rem;
+  }
+
+  .md\:rounded-2xl {
+    border-radius: 1.25rem;
+  }
+
   .md\:rounded-t-none {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -30653,6 +30846,46 @@ html {
     border-bottom-left-radius: 9999px;
   }
 
+  .md\:rounded-t-xl {
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+  }
+
+  .md\:rounded-r-xl {
+    border-top-right-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+  }
+
+  .md\:rounded-b-xl {
+    border-bottom-right-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+
+  .md\:rounded-l-xl {
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+
+  .md\:rounded-t-2xl {
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+  }
+
+  .md\:rounded-r-2xl {
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+  }
+
+  .md\:rounded-b-2xl {
+    border-bottom-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+  }
+
+  .md\:rounded-l-2xl {
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+  }
+
   .md\:rounded-tl-none {
     border-top-left-radius: 0;
   }
@@ -30731,6 +30964,38 @@ html {
 
   .md\:rounded-bl-full {
     border-bottom-left-radius: 9999px;
+  }
+
+  .md\:rounded-tl-xl {
+    border-top-left-radius: .75rem;
+  }
+
+  .md\:rounded-tr-xl {
+    border-top-right-radius: .75rem;
+  }
+
+  .md\:rounded-br-xl {
+    border-bottom-right-radius: .75rem;
+  }
+
+  .md\:rounded-bl-xl {
+    border-bottom-left-radius: .75rem;
+  }
+
+  .md\:rounded-tl-2xl {
+    border-top-left-radius: 1.25rem;
+  }
+
+  .md\:rounded-tr-2xl {
+    border-top-right-radius: 1.25rem;
+  }
+
+  .md\:rounded-br-2xl {
+    border-bottom-right-radius: 1.25rem;
+  }
+
+  .md\:rounded-bl-2xl {
+    border-bottom-left-radius: 1.25rem;
   }
 
   .md\:border-solid {
@@ -43873,6 +44138,14 @@ html {
     border-radius: 9999px;
   }
 
+  .lg\:rounded-xl {
+    border-radius: .75rem;
+  }
+
+  .lg\:rounded-2xl {
+    border-radius: 1.25rem;
+  }
+
   .lg\:rounded-t-none {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -43973,6 +44246,46 @@ html {
     border-bottom-left-radius: 9999px;
   }
 
+  .lg\:rounded-t-xl {
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+  }
+
+  .lg\:rounded-r-xl {
+    border-top-right-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+  }
+
+  .lg\:rounded-b-xl {
+    border-bottom-right-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+
+  .lg\:rounded-l-xl {
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+
+  .lg\:rounded-t-2xl {
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+  }
+
+  .lg\:rounded-r-2xl {
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+  }
+
+  .lg\:rounded-b-2xl {
+    border-bottom-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+  }
+
+  .lg\:rounded-l-2xl {
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+  }
+
   .lg\:rounded-tl-none {
     border-top-left-radius: 0;
   }
@@ -44051,6 +44364,38 @@ html {
 
   .lg\:rounded-bl-full {
     border-bottom-left-radius: 9999px;
+  }
+
+  .lg\:rounded-tl-xl {
+    border-top-left-radius: .75rem;
+  }
+
+  .lg\:rounded-tr-xl {
+    border-top-right-radius: .75rem;
+  }
+
+  .lg\:rounded-br-xl {
+    border-bottom-right-radius: .75rem;
+  }
+
+  .lg\:rounded-bl-xl {
+    border-bottom-left-radius: .75rem;
+  }
+
+  .lg\:rounded-tl-2xl {
+    border-top-left-radius: 1.25rem;
+  }
+
+  .lg\:rounded-tr-2xl {
+    border-top-right-radius: 1.25rem;
+  }
+
+  .lg\:rounded-br-2xl {
+    border-bottom-right-radius: 1.25rem;
+  }
+
+  .lg\:rounded-bl-2xl {
+    border-bottom-left-radius: 1.25rem;
   }
 
   .lg\:border-solid {
@@ -57193,6 +57538,14 @@ html {
     border-radius: 9999px;
   }
 
+  .xl\:rounded-xl {
+    border-radius: .75rem;
+  }
+
+  .xl\:rounded-2xl {
+    border-radius: 1.25rem;
+  }
+
   .xl\:rounded-t-none {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -57293,6 +57646,46 @@ html {
     border-bottom-left-radius: 9999px;
   }
 
+  .xl\:rounded-t-xl {
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+  }
+
+  .xl\:rounded-r-xl {
+    border-top-right-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+  }
+
+  .xl\:rounded-b-xl {
+    border-bottom-right-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+
+  .xl\:rounded-l-xl {
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+
+  .xl\:rounded-t-2xl {
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+  }
+
+  .xl\:rounded-r-2xl {
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+  }
+
+  .xl\:rounded-b-2xl {
+    border-bottom-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+  }
+
+  .xl\:rounded-l-2xl {
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+  }
+
   .xl\:rounded-tl-none {
     border-top-left-radius: 0;
   }
@@ -57371,6 +57764,38 @@ html {
 
   .xl\:rounded-bl-full {
     border-bottom-left-radius: 9999px;
+  }
+
+  .xl\:rounded-tl-xl {
+    border-top-left-radius: .75rem;
+  }
+
+  .xl\:rounded-tr-xl {
+    border-top-right-radius: .75rem;
+  }
+
+  .xl\:rounded-br-xl {
+    border-bottom-right-radius: .75rem;
+  }
+
+  .xl\:rounded-bl-xl {
+    border-bottom-left-radius: .75rem;
+  }
+
+  .xl\:rounded-tl-2xl {
+    border-top-left-radius: 1.25rem;
+  }
+
+  .xl\:rounded-tr-2xl {
+    border-top-right-radius: 1.25rem;
+  }
+
+  .xl\:rounded-br-2xl {
+    border-bottom-right-radius: 1.25rem;
+  }
+
+  .xl\:rounded-bl-2xl {
+    border-bottom-left-radius: 1.25rem;
   }
 
   .xl\:border-solid {

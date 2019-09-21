@@ -42,9 +42,12 @@ html{
 .section-title{
     @apply uppercase font-semibold text-center text-4xl tracking-widest text-cool-grey-700 p-10 mt-16;
 }
-
 @screen md{
     .section-title{
         @apply text-5xl;
     }
+}
+#modal{
+    // @apply bg-cool-grey-050;
+    transition: 1s ease;
 }

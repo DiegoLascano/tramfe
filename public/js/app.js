@@ -6607,7 +6607,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".overlay[data-v-53ab54d2]{\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-image: linear-gradient(118.91deg, #14919B -3.92%, rgba(84, 209, 219, 1) 66.37%);\n}\n.modal[data-v-53ab54d2]{\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.close[data-v-53ab54d2] {\n  position: absolute;\n  top: 15px;\n  right: 15px;\n  text-decoration: none;\n}\n.fade-enter-active[data-v-53ab54d2], .fade-leave-active[data-v-53ab54d2] {\n  transition: opacity .5s;\n}\n.fade-enter[data-v-53ab54d2], .fade-leave-to[data-v-53ab54d2] /* .fade-leave-active below version 2.1.8 */ {\n  opacity: 0;\n}\n@media (min-width: 640px){\n.modal[data-v-53ab54d2]{\n    height: 93%;\n    width: 90%;\n}\n}\n.primary[data-v-53ab54d2] {\n  /* fill: #2CB1BC;  */\n  fill: url(#Gradient1);\n}\n.secondary[data-v-53ab54d2] {\n  fill: #E0FCFF;\n}\n.gradient-10[data-v-53ab54d2]{\n  stop-color:rgba(0, 62, 107, 0.9);\n}\n.gradient-30[data-v-53ab54d2]{\n  stop-color:rgba(10, 108, 116, 0.85);\n}\n.gradient-100[data-v-53ab54d2]{\n  stop-color:rgba(20, 145, 155, 0.9);\n}\n", ""]);
+exports.push([module.i, ".overlay[data-v-53ab54d2]{\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: rgba(203, 210, 217, 0.8);\n  /* background-image: linear-gradient(118.91deg, #14919B -3.92%, rgba(84, 209, 219, 1) 66.37%);    */\n}\n.modal[data-v-53ab54d2]{\n  position: relative;\n  width: 100%;\n  height: 100%;\n  background-color: #F5F7FA;\n}\n.close[data-v-53ab54d2] {\n  position: absolute;\n  top: 15px;\n  right: 15px;\n  text-decoration: none;\n}\n.fade-enter-active[data-v-53ab54d2], .fade-leave-active[data-v-53ab54d2] {\n  transition: opacity .5s;\n}\n.fade-enter[data-v-53ab54d2], .fade-leave-to[data-v-53ab54d2] /* .fade-leave-active below version 2.1.8 */ {\n  opacity: 0;\n}\n@media (min-width: 640px){\n.modal[data-v-53ab54d2]{\n    height: 93%;\n    width: 90%;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -38434,7 +38434,7 @@ var render = function() {
           [
             _c(
               "div",
-              { staticClass: "modal bg-cool-grey-050" },
+              { staticClass: "modal sm:rounded-2xl" },
               [
                 _c(
                   "button",
@@ -38450,7 +38450,7 @@ var render = function() {
                     _c(
                       "svg",
                       {
-                        staticClass: "icon-close-circle h-12 w-12",
+                        staticClass: "icon-close-circle h-16 w-16",
                         attrs: {
                           xmlns: "http://www.w3.org/2000/svg",
                           viewBox: "0 0 24 24"
@@ -51555,7 +51555,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// This block changes the bg color of the body on scrolling
+// This block changes the bg color of the BODY on scrolling
 $(window).scroll(function () {
   // selectors
   var $window = $(window),
@@ -51577,7 +51577,27 @@ $(window).scroll(function () {
       $body.addClass('color-' + $(this).data('color'));
     }
   });
-}).scroll(); // This function changes the bg color of the navbar on scrolling
+}).scroll(); // This block changes the bg color of the MODAL on scrolling
+
+$(document).ready(function () {
+  $('#modal').scroll(function () {
+    var $modal = $('#modal'),
+        $panel = $('.modal-section');
+    var scroll = $modal.scrollTop() + $modal.height() / 2;
+    $panel.each(function () {
+      var $this = $(this); // $modal.scrollTop() added in order to avoid that section position changes with scrolling
+
+      if ($this.position().top + $modal.scrollTop() <= scroll && $this.position().top + $modal.scrollTop() + $this.height() > scroll) {
+        // remove all the existing classes of the modal
+        $modal.removeClass(function (index, css) {
+          return (css.match(/(^|\s)color-\S+/g) || []).join(' ');
+        }); // adds current section class to set the new background color of the modal
+
+        $modal.addClass('color-' + $(this).data('color'));
+      }
+    });
+  }).scroll();
+}); // This function changes the bg color of the navbar on scrolling
 
 $(function () {
   $(document).scroll(function () {
