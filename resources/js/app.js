@@ -25,7 +25,18 @@ Vue.component('nav-bar', require('./components/NavBar.vue').default);
 Vue.component('service-card', require('./components/ServiceCard.vue').default);
 Vue.component('modal-component', require('./components/Modal.vue').default);
 Vue.component('button-component', require('./components/Button.vue').default);
-Vue.component('footer-panel', require('./components/Footer.vue').default);
+Vue.component('inline-svg', require('./components/InlineSvg.js').default);
+
+// sections
+Vue.component('cover-section', require('./sections/Cover.vue').default);
+Vue.component('services-section', require('./sections/Services.vue').default);
+Vue.component('profile-section', require('./sections/Profile.vue').default);
+Vue.component('footer-section', require('./sections/Footer.vue').default);
+
+// modal sections
+Vue.component('modal-cover', require('./components/modalsections/ModalCover.vue').default);
+Vue.component('modal-simple', require('./components/modalsections/ModalSimple.vue').default);
+Vue.component('modal-columns', require('./components/modalsections/ModalColumns.vue').default);
 
 Vue.prototype.$eventBus = new Vue();
 

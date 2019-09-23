@@ -62,3 +62,9 @@ $(function () {
       // console.log(scrolltop);
   });
 });
+
+// scroll text
+// $(document).on('scroll', function() {
+	// $("#title").css("top", Math.max(180 - 0.2*window.scrollY, 0) + "px");
+  // $("#static").css("opacity", Math.max(1 - 0.004*window.scrollY, 0));
+// })

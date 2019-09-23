@@ -17,23 +17,22 @@
 </head>
 <body>
     <div id="app" class="flex flex-col">
+        <svg class="absolute z-0">
+            <defs>
+                <linearGradient x1="0%" y1="0%" x2="100%" y2="200%" id="Gradient1" >
+                    <stop offset="10%" class="gradient-10"/>
+                    <stop offset="30%" class="gradient-30"/>
+                    <stop offset="100%" class="gradient-100"/>
+                </linearGradient>
+            </defs>
+        </svg>
         <nav-bar></nav-bar>
-        <section class="cover">
-            <div class="min-h-screen flex flex-col sm:flex-row items-center justify-between layer">
-                <div>
-                    <p>
-                        Aqui va la foto
-                    </p>
-                </div>
-                <div>
-                    <p>TRAMFE</p>
-                    <p>Telerehabilitación de la Atención, Memoria y Funciones Ejecutivas</p>
-                </div>
-            </div>
+        <section>
+            <cover-section></cover-section>
         </section>
         <section id="concept" class="panel" data-color="grey-050">
             <div class="w-4/5 mx-auto container-1200">
-                <div class="section-title">
+                <div id="title" class="section-title relative">
                     Concepto
                 </div>
                 <div class="flex flex-col md:flex-row items-center">
@@ -46,22 +45,18 @@
                 </div>
             </div>
         </section>
-        <section id="profile" class="panel min-h-screen" data-color="gradient">
+        <section id="profile" class="panel" data-color="gradient">
             <div class="section-title text-cool-grey-050">
                 Perfil
             </div>
+            <profile-section></profile-section>
+            @include('partials.profile')
         </section>
         <section id="services" class="panel flex-1 text-center" data-color="grey-050">
             <div class="inline-block container-1200 w-4/5">
                 <div class="section-title">Servicios</div>
-                <div class="flex flex-col sm:flex-row flex-wrap -mx-3">
-                    <service-card>Psicología Clínica</service-card>
-                    <service-card>Rehabilitación Neuropsicológica</service-card>
-                    <service-card>Estimulación Cognitiva</service-card>
-                    <service-card>Psicoeducación</service-card>
-                    <service-card>Telerehabilitacion</service-card>
-                    <service-card>Capacitación</service-card>
-                </div>
+                <services-section></services-section>
+                @include('partials.services')
             </div>
         </section>
         <section id="platform-gnpt" class="panel min-h-screen" data-color="gradient">
@@ -73,7 +68,7 @@
             <contact-form></contact-form>
         </section>
         <div class="footer">
-            <footer-panel></footer-panel>
+            <footer-section></footer-section>
         </div>
     </div>
 </body>

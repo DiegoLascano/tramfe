@@ -23,22 +23,18 @@
                     </div>
                 </div>
                 <div class="flex-1 flex flex-col sm:flex-row justify-around">
-                    <div class="m-auto py-10">
-                        <div>
-                            Icon
+                    <a href="tel:+593987120499" class="m-auto py-4 md:py-10 text-lg text-cool-grey-600 tracking-wide">
+                        <div class="flex">
+                            <inline-svg name="icon-whatsapp" classes="h-10 w-10" class="mx-auto my-4"></inline-svg>
                         </div>
-                        <label>
-                            Whatsapp
-                        </label>
-                    </div>
-                    <div class="m-auto py-10">
-                        <div>
-                            Icon
+                        +(593) 987 120 499
+                    </a>
+                    <a href="mailto:vmvalladaresvelin@gmail.com" class="m-auto py-4 md:py-10 text-lg text-cool-grey-600 tracking-wide">
+                        <div class="flex">
+                            <inline-svg name="icon-mail" classes="primary h-10 w-10" class="mx-auto my-4"></inline-svg>
                         </div>
-                        <label>
-                            Email
-                        </label>
-                    </div>  
+                        vmvalladaresvelin@gmail.com
+                    </a>  
                 </div>
             </div>
         </form>
@@ -46,7 +42,9 @@
 </template>
 
 <script>
+import InlineSvg from './InlineSvg.js';
 export default {
+    components:{ InlineSvg },
     mounted() {
     }
 }

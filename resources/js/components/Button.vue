@@ -1,7 +1,7 @@
 <template>
     <div>
         <button @click="emitEvent()" class="btn btn-primary text-cyan-050 tracking-wider">
-            This is a button
+            <slot></slot>
         </button>
     </div>
 </template>

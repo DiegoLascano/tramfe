@@ -5,16 +5,15 @@
                 <div class="modal sm:rounded-2xl">
                     <button @click="toggleShow()" class="close text-cyan-050">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-close-circle h-16 w-16">
-                            <linearGradient x1="0%" y1="0%" x2="100%" y2="200%" id="Gradient1" >
-                                <stop offset="10%" class="gradient-10"/>
-                                <stop offset="30%" class="gradient-30"/>
-                                <stop offset="100%" class="gradient-100"/>
-                            </linearGradient>
-                            <circle cx="12" cy="12" r="10" class="primary"/>
-                            <path class="secondary" d="M13.41 12l2.83 2.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 1 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12z"/>
+                            <circle cx="12" cy="12" r="10" class="primary-gradient"/>
+                            <path class="secondary-gradient" d="M13.41 12l2.83 2.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 1 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12z"/>
                         </svg>
                     </button>
                     <slot></slot>
+                        <section class="modal-cover bg-cover bg-center">
+                            <div class="modal-layer w-full h-full py-2">
+                            </div>
+                        </section>
                 </div>
             </div>
         </transition>
@@ -22,6 +21,7 @@
 </template>
 
 <script>
+
 export default {
     props: ['eventName'],
     data(){
@@ -45,7 +45,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
     .overlay{
         position: fixed;
         top: 0;
@@ -79,5 +79,10 @@ export default {
             width: 90%;
         }
     }
-
+    .modal-cover{
+        background-image: url('../../images/photos/modal/mountain.jpg')
+    }
+    .modal-layer{
+        background-color:  rgba(0, 62, 107,0.7);
+    }
 </style>

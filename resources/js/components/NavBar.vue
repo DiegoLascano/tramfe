@@ -9,7 +9,7 @@
         <!-- Menu Icon -->
         <div class="block lg:hidden">
             <button @click="toggleModal()" class="menu-button flex items-center px-3 py-2 text-cyan-050 hover:text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current h-8 w-8 icon-menu"><path class="secondary" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current h-8 w-8 icon-menu"><path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/></svg>
             </button>
         </div>
         <div class="w-full hidden lg:block flex-grow lg:flex lg:items-center lg:w-auto">
@@ -31,7 +31,7 @@
             <div class="flex flex-col">
                 <button @click="toggleModal()" class="close text-cyan-050">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current icon-close h-12 w-12">
-                        <path class="secondary" fill-rule="evenodd" d="M15.78 14.36a1 1 0 0 1-1.42 1.42l-2.82-2.83-2.83 2.83a1 1 0 1 1-1.42-1.42l2.83-2.82L7.3 8.7a1 1 0 0 1 1.42-1.42l2.83 2.83 2.82-2.83a1 1 0 0 1 1.42 1.42l-2.83 2.83 2.83 2.82z"/>
+                        <path fill-rule="evenodd" d="M15.78 14.36a1 1 0 0 1-1.42 1.42l-2.82-2.83-2.83 2.83a1 1 0 1 1-1.42-1.42l2.83-2.82L7.3 8.7a1 1 0 0 1 1.42-1.42l2.83 2.83 2.82-2.83a1 1 0 0 1 1.42 1.42l-2.83 2.83 2.83 2.82z"/>
                     </svg>
                 </button>
                 <div class="flex flex-col justify-center h-screen">

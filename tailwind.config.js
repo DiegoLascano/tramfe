@@ -1,16 +1,23 @@
 module.exports = {
   theme: {
     extend: {
+      width: {
+        '72': '18rem',
+        '80': '20rem',
+        '88': '22rem',
+        '96': '24rem',
+        '112': '28rem',
+      },
+      height: {
+        '72': '18rem',
+        '80': '20rem',
+        '88': '22rem',
+        '96': '24rem',
+        '112': '28rem',
+      },
       borderRadius: {
-        // 'none': '0',
-        // 'sm': '.125rem',
-        // default: '.25rem',
-        // default: '4px',
-        // 'lg': '.5rem',
         'xl': '.75rem',
         '2xl': '1.25rem',
-        // 'full': '9999px',
-        // 'large': '12px',
       },
 
       colors: {
