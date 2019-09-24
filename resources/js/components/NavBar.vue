@@ -14,12 +14,6 @@
         </div>
         <div class="w-full hidden lg:block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="text-sm lg:flex-grow lg:flex lg:justify-end">
-                <!-- <a href="#concept" class="nav-link block lg:inline-block text-cyan-050 hover:text-cyan-700 lg:mx-3">Concepto</a>
-                <a href="#profile" class="nav-link block lg:inline-block text-cyan-050 hover:text-cyan-700 lg:mx-3">Perfil</a>
-                <a href="#services" class="nav-link block lg:inline-block text-cyan-050 hover:text-cyan-700 lg:mx-3">Servicios</a>
-                <a href="#platform-gnpt" class="nav-link block lg:inline-block text-cyan-050 hover:text-cyan-700 lg:mx-3">Plataforma GNPT</a>
-                <a href="#contact" class="nav-link block lg:inline-block text-cyan-050 hover:text-cyan-700 lg:mx-3">Contacto</a> -->
-
                 <a v-for="link in links" v-bind:key="link.id" :href="link.ref" class="nav-link block lg:inline-block text-lg text-cyan-050 hover:text-cyan-700 lg:mx-3">
                     {{ link.name }}
                 </a>
@@ -98,7 +92,8 @@ export default {
         align-items: center;
         justify-content: center;
         /* background: rgba(0, 0, 0, .4); */
-        background-image: linear-gradient(118.91deg, #14919B -3.92%, rgba(84, 209, 219, 1) 66.37%);
+        /* background-image: linear-gradient(118.91deg, #14919B -3.92%, rgba(84, 209, 219, 1) 66.37%); */
+        background: linear-gradient(120deg, rgba(0, 62, 107, 1) 0%, rgba(10, 108, 116, 1) 50%, rgba(20, 145, 155, 1) 100%);
         /* transition: opacity .3s; */
         /* opacity: 0; */
     }

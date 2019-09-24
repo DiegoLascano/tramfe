@@ -1,6 +1,5 @@
 <modal-component event-name="profile">
-    <div class="h-full overflow-auto flex flex-col sm:rounded-2xl" id="modal">
-      <modal-cover>
+      <modal-cover class="modal-cover-profile">
         Hola, mi nombre es Valeria Valladares. Fachlich arbeite ich überwiegend mit Patienten mit depressiven Symptomen, psychosomatischen Beschwerden, Burn-out oder Angststörungen.
       </modal-cover>
 
@@ -25,6 +24,11 @@
           Fachlich arbeite ich überwiegend mit Patienten mit depressiven Symptomen, psychosomatischen Beschwerden, Burn-out oder Angststörungen.
         </template>
         <template v-slot:column2>
+          Seit mehreren Jahren arbeite ich nicht nur psychotherapeutisch in eigener Praxis, mit Menschen, die momentan das Gefühl haben, aus eigener Kraft eine Krise nicht bewältigen zu können, sondern auch präventiv, um weiteren Krisen vorzubeugen.
+          Dabei ist mir in meiner therapeutischen Arbeit ein integrativer Ansatz wichtig. Neben meiner verhaltenstherapeutischen Ausbildung, bin ich ausgebildete Schematherapeutin.
+          Fachlich arbeite ich überwiegend mit Patienten mit depressiven Symptomen, psychosomatischen Beschwerden, Burn-out oder Angststörungen.
+        </template>
+        <template v-slot:column3>
           Seit mehreren Jahren arbeite ich nicht nur psychotherapeutisch in eigener Praxis, mit Menschen, die momentan das Gefühl haben, aus eigener Kraft eine Krise nicht bewältigen zu können, sondern auch präventiv, um weiteren Krisen vorzubeugen.
           Dabei ist mir in meiner therapeutischen Arbeit ein integrativer Ansatz wichtig. Neben meiner verhaltenstherapeutischen Ausbildung, bin ich ausgebildete Schematherapeutin.
           Fachlich arbeite ich überwiegend mit Patienten mit depressiven Symptomen, psychosomatischen Beschwerden, Burn-out oder Angststörungen.
@@ -55,5 +59,4 @@
             </div>
         </div>
       </section>
-    </div>
 </modal-component>

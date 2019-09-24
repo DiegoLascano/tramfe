@@ -1,5 +1,5 @@
 <template>
-    <section id="modal-detail" class="modal-section container-1200 w-full mx-auto" :data-color="dataColor">
+    <section class="modal-section container-1200 w-full mx-auto" :data-color="dataColor">
         <div class="section-title text-cool-grey-050">
             <slot name="title"></slot>
         </div>
@@ -9,6 +9,9 @@
           </div>
           <div class="md:w-1/2 text-cool-grey-600 text-center text-lg my-10 p-2 md:self-end max-w-lg">
             <slot name="column2"></slot>
+          </div>
+          <div class="md:w-1/2 text-cool-grey-600 text-center text-lg my-10 md:self-start max-w-lg">
+            <slot name="column3"></slot>
           </div>
         </div>
     </section>

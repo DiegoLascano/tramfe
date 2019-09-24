@@ -32,7 +32,7 @@
         </section>
         <section id="concept" class="panel" data-color="grey-050">
             <div class="w-4/5 mx-auto container-1200">
-                <div id="title" class="section-title relative">
+                <div id="title" class="section-title">
                     Concepto
                 </div>
                 <div class="flex flex-col md:flex-row items-center">
@@ -56,7 +56,12 @@
             <div class="inline-block container-1200 w-4/5">
                 <div class="section-title">Servicios</div>
                 <services-section></services-section>
-                @include('partials.services')
+                @include('partials.services.psicologia-clinica')
+                @include('partials.services.rehabilitacion-neuro')
+                @include('partials.services.estimulacion-cognitiva')
+                @include('partials.services.psico-educacion')
+                @include('partials.services.tele-rehabilitacion')
+                @include('partials.services.capacitacion')
             </div>
         </section>
         <section id="platform-gnpt" class="panel min-h-screen" data-color="gradient">
@@ -64,6 +69,7 @@
                 Plataforma GNPT
             </div>
         </section>
+        <testimonial-section></testimonial-section>
         <section id="contact" class="panel container-800 w-4/5 mx-auto" data-color="grey-050">
             <contact-form></contact-form>
         </section>

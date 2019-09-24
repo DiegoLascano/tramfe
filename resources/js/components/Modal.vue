@@ -9,11 +9,16 @@
                             <path class="secondary-gradient" d="M13.41 12l2.83 2.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 1 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12z"/>
                         </svg>
                     </button>
-                    <slot></slot>
+                    <div class="h-full overflow-auto flex flex-col sm:rounded-2xl" id="modal">
+                        <!-- modal sections through components -->
+                        <slot></slot>
+
+                        <!-- footer -->
                         <section class="modal-cover bg-cover bg-center">
                             <div class="modal-layer w-full h-full py-2">
                             </div>
                         </section>
+                    </div>
                 </div>
             </div>
         </transition>
@@ -80,7 +85,7 @@ export default {
         }
     }
     .modal-cover{
-        background-image: url('../../images/photos/modal/mountain.jpg')
+        background-image: url('../../images/photos/modal/alpes.jpg');
     }
     .modal-layer{
         background-color:  rgba(0, 62, 107,0.7);

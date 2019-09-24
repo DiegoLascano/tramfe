@@ -20,6 +20,9 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
+import VueCarousel from 'vue-carousel';
+Vue.use(VueCarousel);
+
 Vue.component('contact-form', require('./components/ContactForm.vue').default);
 Vue.component('nav-bar', require('./components/NavBar.vue').default);
 Vue.component('service-card', require('./components/ServiceCard.vue').default);
@@ -31,6 +34,7 @@ Vue.component('inline-svg', require('./components/InlineSvg.js').default);
 Vue.component('cover-section', require('./sections/Cover.vue').default);
 Vue.component('services-section', require('./sections/Services.vue').default);
 Vue.component('profile-section', require('./sections/Profile.vue').default);
+Vue.component('testimonial-section', require('./sections/Testimonial.vue').default);
 Vue.component('footer-section', require('./sections/Footer.vue').default);
 
 // modal sections
