@@ -4,16 +4,19 @@
             <div class="flex flex-col">
                 <div class="flex-1">
                     <div class="section-title">Contacto</div>
-                    <p class="text-cool-grey-600 text-lg mb-10">Lorem ipsum dolor sit amet consectetur adipiscing, elit fringilla nullam velit lacus at, 
-                        tempus nunc vel posuere lectus, lobortis scelerisque maecenas vivamus semper. Magnis egestas 
-                        nisl id pharetra praesent lacus, curabitur porta condimentum habitasse bibendum gravida lectus, 
-                        iaculis libero dignissim congue eleifend. Praesent erat nascetur lacinia faucibus mi, vehicula 
-                        interdum vel justo quam gravida, pellentesque vivamus ultricies phasellus.</p>
+                    <p class="text-cool-grey-600 text-lg mb-10">
+                        En caso de que necesites entrar en contacto por algún motivo en particular, o simplemente si necesitas información más precisa, 
+                        llena el siguiente formulario y me comunicaré contigo:
+                    </p>
                 </div>
                 <div class="flex-1 flex flex-col -mx-2">
                     <div class="flex flex-col md:flex-row">
-                        <input class="form-input" type="text" name="name" id="form-name" placeholder="Nombre" required>
+                        <input class="form-input" type="text" name="firstName" id="form-firstname" placeholder="Nombre" required>
+                        <input class="form-input" type="text" name="lastName" id="form-lastname" placeholder="Apellido" required>
+                    </div>
+                    <div class="flex flex-col md:flex-row">
                         <input class="form-input" type="email" name="email" id="form-email" placeholder="E-mail" required>
+                        <input class="form-input" type="tel" name="tel" id="form-tel" placeholder="Telefono" required>
                     </div>
                     <textarea class="form-input" name="message" id="form-message" rows="6" placeholder="Mensaje" required></textarea>
                     <div class="flex justify-end">
@@ -23,15 +26,15 @@
                     </div>
                 </div>
                 <div class="flex-1 flex flex-col sm:flex-row justify-around">
-                    <a href="tel:+593987120499" class="m-auto py-4 md:py-10 text-lg text-cool-grey-600 tracking-wide">
+                    <a href="tel:+593987120499" class="m-auto py-4 md:py-10 text-cool-grey-600 tracking-wide">
                         <div class="flex">
-                            <inline-svg name="icon-whatsapp" classes="h-10 w-10" class="mx-auto my-4"></inline-svg>
+                            <inline-svg name="icon-whatsapp" classes="h-8 w-8" class="mx-auto my-4"></inline-svg>
                         </div>
                         +(593) 987 120 499
                     </a>
-                    <a href="mailto:vmvalladaresvelin@gmail.com" class="m-auto py-4 md:py-10 text-lg text-cool-grey-600 tracking-wide">
+                    <a href="mailto:vmvalladaresvelin@gmail.com" class="m-auto py-4 md:py-10 text-cool-grey-600 tracking-wide">
                         <div class="flex">
-                            <inline-svg name="icon-mail" classes="primary h-10 w-10" class="mx-auto my-4"></inline-svg>
+                            <inline-svg name="icon-mail" classes="primary h-8 w-8" class="mx-auto my-4"></inline-svg>
                         </div>
                         vmvalladaresvelin@gmail.com
                     </a>  

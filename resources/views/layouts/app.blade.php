@@ -27,27 +27,33 @@
             </defs>
         </svg>
         <nav-bar></nav-bar>
-        <section>
+        <section id="cover-section">
             <cover-section></cover-section>
         </section>
         <section id="concept" class="panel" data-color="grey-050">
             <div class="w-4/5 mx-auto container-1200">
                 <div id="title" class="section-title">
-                    Concepto
+                    TRAMFE
                 </div>
                 <div class="flex flex-col md:flex-row items-center">
-                    <div class="text-gradient text-3xl md:text-4xl lg:text-5xl font-semibold text-center md:w-3/5 md:p-4">
-                        Telerehabilitación de Atención, Memoria y Funciones Ejecutivas
+                    <div class="text-gradient font-semibold text-center md:w-3/5 md:p-4">
+                        <p class="text-3xl md:text-4xl lg:text-5xl my-2 lg:px-2">
+                            Telerehabilitación de la Atención, Memoria y Funciones Ejecutivas
+                        </p>
                     </div>
-                    <div class="text-cool-grey-600 text-xl md:w-2/5 mt-10 md:mt-0"> 
-                        Lorem ipsum dolor sit amet consectetur adipiscing, elit fringilla nullam velit lacus at, tempus nunc vel posuere lectus, lobortis scelerisque maecenas vivamus semper. Magnis egestas nisl id pharetra praesent lacus, curabitur porta condimentum habitasse bibendum gravida lectus, iaculis libero dignissim congue eleifend. Praesent erat nascetur lacinia faucibus mi, vehicula interdum vel justo quam gravida, pellentesque vivamus ultricies phasellus.
+                    <div class="text-cool-grey-600 md:w-2/5 mt-10 md:mt-0"> 
+                        Gracias a la experiencia adquirida a nivel internacional, he aprendido acerca de la importancia de la tecnología e investigación. 
+                        <p class="my-1">
+                            En TRAMFE, mi compromiso es brindar un servicio de calidad y altamente eficiente, integrando las nuevas tendencias tecnológicas 
+                            para el servicio de rehabilitación neuropsicológica y estimulación cognitiva.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
         <section id="profile" class="panel" data-color="gradient">
             <div class="section-title text-cool-grey-050">
-                Perfil
+                Mi Perfil
             </div>
             <profile-section></profile-section>
             @include('partials.profile')
@@ -64,15 +70,16 @@
                 @include('partials.services.capacitacion')
             </div>
         </section>
+        <testimonial-section class="mt-8"></testimonial-section>
         <section id="platform-gnpt" class="panel min-h-screen" data-color="gradient">
-            <div class="section-title text-cool-grey-050">
-                Plataforma GNPT
-            </div>
+           <plataforma-section></plataforma-section>
         </section>
-        <testimonial-section></testimonial-section>
         <section id="contact" class="panel container-800 w-4/5 mx-auto" data-color="grey-050">
             <contact-form></contact-form>
         </section>
+
+        <visible-component when-hidden="#cover-section"></visible-component>
+
         <div class="footer">
             <footer-section></footer-section>
         </div>

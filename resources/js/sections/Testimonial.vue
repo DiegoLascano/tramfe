@@ -1,5 +1,5 @@
 <template>
-    <div class="testimonial lg:bg-fixed bg-cover bg-center h-96">
+    <div class="cover lg:bg-fixed bg-cover bg-center h-96">
         <div class="layer w-full h-full flex">
             <div class="m-auto text-xl text-cyan-050 text-center w-full md:w-1/2">
                 <inline-svg name="icon-quote-rounded" classes="fill-current h-12 w-12 ml-6 mb-3" class="text-cyan-600"></inline-svg>
@@ -42,8 +42,8 @@ export default {
 }
 </script>
 
-<style>
-    .testimonial{
+<style scoped>
+    /* .testimonial{
         background-image: url('../../images/photos/cover/down.jpg')
-    }
+    } */
 </style>

@@ -58,7 +58,7 @@ $(function () {
   $(document).scroll(function () {
       var $nav = $(".navbar-fixed-top");
       // var scrolltop = $(this).scrollTop();
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      $nav.toggleClass('scrolled', $(this).scrollTop() > 5*($nav.height()));
       // console.log(scrolltop);
   });
 });

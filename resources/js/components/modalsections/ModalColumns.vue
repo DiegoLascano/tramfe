@@ -22,7 +22,3 @@ export default {
     props: ['dataColor'],
 }
 </script>
-
-<style lang="">
-    
-</style>

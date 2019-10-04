@@ -1,7 +1,7 @@
 <template>
     <div>
         <transition name="fade">
-            <div v-show="show" class="overlay">
+            <div v-show="show" class="overlay z-20">
                 <div class="modal sm:rounded-2xl">
                     <button @click="toggleShow()" class="close text-cyan-050">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-close-circle h-16 w-16">
@@ -15,7 +15,7 @@
 
                         <!-- footer -->
                         <section class="modal-cover bg-cover bg-center">
-                            <div class="modal-layer w-full h-full py-2">
+                            <div class="layer w-full h-full py-2">
                             </div>
                         </section>
                     </div>
@@ -50,7 +50,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .overlay{
         position: fixed;
         top: 0;
@@ -86,8 +86,5 @@ export default {
     }
     .modal-cover{
         background-image: url('../../images/photos/modal/alpes.jpg');
-    }
-    .modal-layer{
-        background-color:  rgba(0, 62, 107,0.7);
     }
 </style>

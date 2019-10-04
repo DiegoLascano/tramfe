@@ -21,9 +21,6 @@ html{
     @apply bg-cool-grey-050;
 }
 .text-gradient{
-	// text-transform: uppercase;
-	// background: linear-gradient(to right, #0E7C86 0%, #330867 100%);
-	// background: linear-gradient(to right, #0E7C86 0%, #003E6B 100%);
 	background: linear-gradient(120deg, rgba(0, 62, 107, 1) 20%, rgba(10, 108, 116, 1) 50%, rgba(20, 145, 155, 1) 100%);
 	// background: linear-gradient(118.91deg, #2CB1BC -3.92%, #003E6B 66.37%);
 	-webkit-background-clip: text;
@@ -40,4 +37,7 @@ html{
 #modal{
     // @apply bg-cool-grey-050;
     transition: 1s ease;
+}
+.layer{
+    background-color:  rgba(0, 62, 107,0.8);
 }

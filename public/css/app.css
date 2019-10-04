@@ -684,6 +684,10 @@ html {
   transition: 1s ease;
 }
 
+.layer {
+  background-color: rgba(0, 62, 107, 0.8);
+}
+
 .btn {
   border-radius: 9999px;
   padding-top: 0.75rem;
@@ -704,7 +708,7 @@ html {
 
 .primary {
   /* fill: #2CB1BC;  */
-  fill: url(#Gradient1);
+  fill: #14919B;
   /* transition: fill 0.5s ease; */
 }
 
@@ -730,6 +734,32 @@ html {
 
 .gradient-100 {
   stop-color: rgba(20, 145, 155, 0.9);
+}
+
+/* Logo classes */
+
+.navbar-fixed-top.scrolled .logo-brain {
+  fill: #9AA5B1;
+}
+
+.logo-brain {
+  fill: #E0FCFF;
+}
+
+.logo-vright {
+  fill: #004e54;
+}
+
+.logo-vleft {
+  fill: #14919B;
+}
+
+.logo-no-fill {
+  fill: none;
+}
+
+.logo-guttmann {
+  background-image: url("../../images/logos/guttmann.png");
 }
 
 .sr-only {
@@ -4766,6 +4796,10 @@ html {
   height: 3rem;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .h-16 {
   height: 4rem;
 }
@@ -4918,6 +4952,10 @@ html {
   margin: 3rem;
 }
 
+.m-14 {
+  margin: 3.5rem;
+}
+
 .m-16 {
   margin: 4rem;
 }
@@ -5030,6 +5068,10 @@ html {
   margin: -1px;
 }
 
+.-m-14 {
+  margin: -3.5rem;
+}
+
 .my-0 {
   margin-top: 0;
   margin-bottom: 0;
@@ -5128,6 +5170,16 @@ html {
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
+}
+
+.my-14 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.mx-14 {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
 }
 
 .my-16 {
@@ -5410,6 +5462,16 @@ html {
   margin-right: -1px;
 }
 
+.-my-14 {
+  margin-top: -3.5rem;
+  margin-bottom: -3.5rem;
+}
+
+.-mx-14 {
+  margin-left: -3.5rem;
+  margin-right: -3.5rem;
+}
+
 .mt-0 {
   margin-top: 0;
 }
@@ -5568,6 +5630,22 @@ html {
 
 .ml-12 {
   margin-left: 3rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mr-14 {
+  margin-right: 3.5rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
+.ml-14 {
+  margin-left: 3.5rem;
 }
 
 .mt-16 {
@@ -6016,6 +6094,22 @@ html {
 
 .-ml-px {
   margin-left: -1px;
+}
+
+.-mt-14 {
+  margin-top: -3.5rem;
+}
+
+.-mr-14 {
+  margin-right: -3.5rem;
+}
+
+.-mb-14 {
+  margin-bottom: -3.5rem;
+}
+
+.-ml-14 {
+  margin-left: -3.5rem;
 }
 
 .max-h-full {
@@ -13970,6 +14064,10 @@ html {
   width: 3rem;
 }
 
+.w-14 {
+  width: 3.5rem;
+}
+
 .w-16 {
   width: 4rem;
 }
@@ -18205,6 +18303,10 @@ html {
     height: 3rem;
   }
 
+  .sm\:h-14 {
+    height: 3.5rem;
+  }
+
   .sm\:h-16 {
     height: 4rem;
   }
@@ -18357,6 +18459,10 @@ html {
     margin: 3rem;
   }
 
+  .sm\:m-14 {
+    margin: 3.5rem;
+  }
+
   .sm\:m-16 {
     margin: 4rem;
   }
@@ -18469,6 +18575,10 @@ html {
     margin: -1px;
   }
 
+  .sm\:-m-14 {
+    margin: -3.5rem;
+  }
+
   .sm\:my-0 {
     margin-top: 0;
     margin-bottom: 0;
@@ -18567,6 +18677,16 @@ html {
   .sm\:mx-12 {
     margin-left: 3rem;
     margin-right: 3rem;
+  }
+
+  .sm\:my-14 {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .sm\:mx-14 {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
   }
 
   .sm\:my-16 {
@@ -18849,6 +18969,16 @@ html {
     margin-right: -1px;
   }
 
+  .sm\:-my-14 {
+    margin-top: -3.5rem;
+    margin-bottom: -3.5rem;
+  }
+
+  .sm\:-mx-14 {
+    margin-left: -3.5rem;
+    margin-right: -3.5rem;
+  }
+
   .sm\:mt-0 {
     margin-top: 0;
   }
@@ -19007,6 +19137,22 @@ html {
 
   .sm\:ml-12 {
     margin-left: 3rem;
+  }
+
+  .sm\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .sm\:mr-14 {
+    margin-right: 3.5rem;
+  }
+
+  .sm\:mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
+  .sm\:ml-14 {
+    margin-left: 3.5rem;
   }
 
   .sm\:mt-16 {
@@ -19455,6 +19601,22 @@ html {
 
   .sm\:-ml-px {
     margin-left: -1px;
+  }
+
+  .sm\:-mt-14 {
+    margin-top: -3.5rem;
+  }
+
+  .sm\:-mr-14 {
+    margin-right: -3.5rem;
+  }
+
+  .sm\:-mb-14 {
+    margin-bottom: -3.5rem;
+  }
+
+  .sm\:-ml-14 {
+    margin-left: -3.5rem;
   }
 
   .sm\:max-h-full {
@@ -27409,6 +27571,10 @@ html {
     width: 3rem;
   }
 
+  .sm\:w-14 {
+    width: 3.5rem;
+  }
+
   .sm\:w-16 {
     width: 4rem;
   }
@@ -31645,6 +31811,10 @@ html {
     height: 3rem;
   }
 
+  .md\:h-14 {
+    height: 3.5rem;
+  }
+
   .md\:h-16 {
     height: 4rem;
   }
@@ -31797,6 +31967,10 @@ html {
     margin: 3rem;
   }
 
+  .md\:m-14 {
+    margin: 3.5rem;
+  }
+
   .md\:m-16 {
     margin: 4rem;
   }
@@ -31909,6 +32083,10 @@ html {
     margin: -1px;
   }
 
+  .md\:-m-14 {
+    margin: -3.5rem;
+  }
+
   .md\:my-0 {
     margin-top: 0;
     margin-bottom: 0;
@@ -32007,6 +32185,16 @@ html {
   .md\:mx-12 {
     margin-left: 3rem;
     margin-right: 3rem;
+  }
+
+  .md\:my-14 {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .md\:mx-14 {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
   }
 
   .md\:my-16 {
@@ -32289,6 +32477,16 @@ html {
     margin-right: -1px;
   }
 
+  .md\:-my-14 {
+    margin-top: -3.5rem;
+    margin-bottom: -3.5rem;
+  }
+
+  .md\:-mx-14 {
+    margin-left: -3.5rem;
+    margin-right: -3.5rem;
+  }
+
   .md\:mt-0 {
     margin-top: 0;
   }
@@ -32447,6 +32645,22 @@ html {
 
   .md\:ml-12 {
     margin-left: 3rem;
+  }
+
+  .md\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .md\:mr-14 {
+    margin-right: 3.5rem;
+  }
+
+  .md\:mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
+  .md\:ml-14 {
+    margin-left: 3.5rem;
   }
 
   .md\:mt-16 {
@@ -32895,6 +33109,22 @@ html {
 
   .md\:-ml-px {
     margin-left: -1px;
+  }
+
+  .md\:-mt-14 {
+    margin-top: -3.5rem;
+  }
+
+  .md\:-mr-14 {
+    margin-right: -3.5rem;
+  }
+
+  .md\:-mb-14 {
+    margin-bottom: -3.5rem;
+  }
+
+  .md\:-ml-14 {
+    margin-left: -3.5rem;
   }
 
   .md\:max-h-full {
@@ -40849,6 +41079,10 @@ html {
     width: 3rem;
   }
 
+  .md\:w-14 {
+    width: 3.5rem;
+  }
+
   .md\:w-16 {
     width: 4rem;
   }
@@ -45085,6 +45319,10 @@ html {
     height: 3rem;
   }
 
+  .lg\:h-14 {
+    height: 3.5rem;
+  }
+
   .lg\:h-16 {
     height: 4rem;
   }
@@ -45237,6 +45475,10 @@ html {
     margin: 3rem;
   }
 
+  .lg\:m-14 {
+    margin: 3.5rem;
+  }
+
   .lg\:m-16 {
     margin: 4rem;
   }
@@ -45349,6 +45591,10 @@ html {
     margin: -1px;
   }
 
+  .lg\:-m-14 {
+    margin: -3.5rem;
+  }
+
   .lg\:my-0 {
     margin-top: 0;
     margin-bottom: 0;
@@ -45447,6 +45693,16 @@ html {
   .lg\:mx-12 {
     margin-left: 3rem;
     margin-right: 3rem;
+  }
+
+  .lg\:my-14 {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .lg\:mx-14 {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
   }
 
   .lg\:my-16 {
@@ -45729,6 +45985,16 @@ html {
     margin-right: -1px;
   }
 
+  .lg\:-my-14 {
+    margin-top: -3.5rem;
+    margin-bottom: -3.5rem;
+  }
+
+  .lg\:-mx-14 {
+    margin-left: -3.5rem;
+    margin-right: -3.5rem;
+  }
+
   .lg\:mt-0 {
     margin-top: 0;
   }
@@ -45887,6 +46153,22 @@ html {
 
   .lg\:ml-12 {
     margin-left: 3rem;
+  }
+
+  .lg\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .lg\:mr-14 {
+    margin-right: 3.5rem;
+  }
+
+  .lg\:mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
+  .lg\:ml-14 {
+    margin-left: 3.5rem;
   }
 
   .lg\:mt-16 {
@@ -46335,6 +46617,22 @@ html {
 
   .lg\:-ml-px {
     margin-left: -1px;
+  }
+
+  .lg\:-mt-14 {
+    margin-top: -3.5rem;
+  }
+
+  .lg\:-mr-14 {
+    margin-right: -3.5rem;
+  }
+
+  .lg\:-mb-14 {
+    margin-bottom: -3.5rem;
+  }
+
+  .lg\:-ml-14 {
+    margin-left: -3.5rem;
   }
 
   .lg\:max-h-full {
@@ -54289,6 +54587,10 @@ html {
     width: 3rem;
   }
 
+  .lg\:w-14 {
+    width: 3.5rem;
+  }
+
   .lg\:w-16 {
     width: 4rem;
   }
@@ -58525,6 +58827,10 @@ html {
     height: 3rem;
   }
 
+  .xl\:h-14 {
+    height: 3.5rem;
+  }
+
   .xl\:h-16 {
     height: 4rem;
   }
@@ -58677,6 +58983,10 @@ html {
     margin: 3rem;
   }
 
+  .xl\:m-14 {
+    margin: 3.5rem;
+  }
+
   .xl\:m-16 {
     margin: 4rem;
   }
@@ -58789,6 +59099,10 @@ html {
     margin: -1px;
   }
 
+  .xl\:-m-14 {
+    margin: -3.5rem;
+  }
+
   .xl\:my-0 {
     margin-top: 0;
     margin-bottom: 0;
@@ -58887,6 +59201,16 @@ html {
   .xl\:mx-12 {
     margin-left: 3rem;
     margin-right: 3rem;
+  }
+
+  .xl\:my-14 {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .xl\:mx-14 {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
   }
 
   .xl\:my-16 {
@@ -59169,6 +59493,16 @@ html {
     margin-right: -1px;
   }
 
+  .xl\:-my-14 {
+    margin-top: -3.5rem;
+    margin-bottom: -3.5rem;
+  }
+
+  .xl\:-mx-14 {
+    margin-left: -3.5rem;
+    margin-right: -3.5rem;
+  }
+
   .xl\:mt-0 {
     margin-top: 0;
   }
@@ -59327,6 +59661,22 @@ html {
 
   .xl\:ml-12 {
     margin-left: 3rem;
+  }
+
+  .xl\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .xl\:mr-14 {
+    margin-right: 3.5rem;
+  }
+
+  .xl\:mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
+  .xl\:ml-14 {
+    margin-left: 3.5rem;
   }
 
   .xl\:mt-16 {
@@ -59775,6 +60125,22 @@ html {
 
   .xl\:-ml-px {
     margin-left: -1px;
+  }
+
+  .xl\:-mt-14 {
+    margin-top: -3.5rem;
+  }
+
+  .xl\:-mr-14 {
+    margin-right: -3.5rem;
+  }
+
+  .xl\:-mb-14 {
+    margin-bottom: -3.5rem;
+  }
+
+  .xl\:-ml-14 {
+    margin-left: -3.5rem;
   }
 
   .xl\:max-h-full {
@@ -67727,6 +68093,10 @@ html {
 
   .xl\:w-12 {
     width: 3rem;
+  }
+
+  .xl\:w-14 {
+    width: 3.5rem;
   }
 
   .xl\:w-16 {

@@ -15,7 +15,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   </head>
-  <body>
+  <body class="bg-cool-grey-100">
     <div id="app">
         <svg class="absolute z-0">
           <defs>
@@ -26,13 +26,10 @@
               </linearGradient>
           </defs>
         </svg>
-      <inline-svg name="icon-brain" classes="fill-current h-16 w-16" class="text-cyan-600"></inline-svg>
-      <inline-svg name="icon-brain2" classes="fill-current h-16 w-16" class="text-cyan-600"></inline-svg>
-      <inline-svg name="icon-edu" classes="primary h-16 w-16" class="text-cyan-600"></inline-svg>
-      <inline-svg name="icon-brain4" classes="primary h-16 w-16" class="text-cyan-600"></inline-svg>
-      <inline-svg name="icon-user-group" classes="h-16 w-16" class="text-cyan-600"></inline-svg>
-      <inline-svg name="icon-remote" classes="primary h-16 w-16" class="text-cyan-600"></inline-svg>
-      <inline-svg name="icon-remote-2" classes="primary h-16 w-16" class="text-cyan-600"></inline-svg>
+        <inline-svg name="logo-valeria" classes="h-40 w-40"></inline-svg>
+        {{-- <section id="platform-gnpt" class="panel min-h-screen" data-color="gradient">
+            <plataforma-section></plataforma-section>
+        </section> --}}
   </div>
 </body>
 </html>

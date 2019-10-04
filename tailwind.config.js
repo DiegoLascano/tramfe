@@ -1,7 +1,12 @@
 module.exports = {
   theme: {
     extend: {
+      margin: {
+        '-14': '-3.5rem',
+        '14': '3.5rem',
+      },
       width: {
+        '14': '3.5rem',
         '72': '18rem',
         '80': '20rem',
         '88': '22rem',
@@ -9,6 +14,7 @@ module.exports = {
         '112': '28rem',
       },
       height: {
+        '14': '3.5rem',
         '72': '18rem',
         '80': '20rem',
         '88': '22rem',

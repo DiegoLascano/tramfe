@@ -29,11 +29,14 @@ Vue.component('service-card', require('./components/ServiceCard.vue').default);
 Vue.component('modal-component', require('./components/Modal.vue').default);
 Vue.component('button-component', require('./components/Button.vue').default);
 Vue.component('inline-svg', require('./components/InlineSvg.js').default);
+Vue.component('visible-component', require('./components/Visible.vue').default);
+Vue.component('stepcard-component', require('./components/StepCard.vue').default);
 
-// sections
+// page sections
 Vue.component('cover-section', require('./sections/Cover.vue').default);
 Vue.component('services-section', require('./sections/Services.vue').default);
 Vue.component('profile-section', require('./sections/Profile.vue').default);
+Vue.component('plataforma-section', require('./sections/Plataforma.vue').default);
 Vue.component('testimonial-section', require('./sections/Testimonial.vue').default);
 Vue.component('footer-section', require('./sections/Footer.vue').default);
 
