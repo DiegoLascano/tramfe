@@ -68,3 +68,14 @@ $(function () {
 	// $("#title").css("top", Math.max(180 - 0.2*window.scrollY, 0) + "px");
   // $("#static").css("opacity", Math.max(1 - 0.004*window.scrollY, 0));
 // })
+
+
+// app backup
+// require('./bootstrap');
+
+// window.Vue = require('vue');
+// Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+
+// const app = new Vue({
+//     el: '#app',
+// });

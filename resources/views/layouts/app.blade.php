@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,15 +18,18 @@
 </head>
 <body>
     <div id="app" class="flex flex-col">
-        <svg class="absolute z-0">
-            <defs>
-                <linearGradient x1="0%" y1="0%" x2="100%" y2="200%" id="Gradient1" >
-                    <stop offset="10%" class="gradient-10"/>
-                    <stop offset="30%" class="gradient-30"/>
-                    <stop offset="100%" class="gradient-100"/>
-                </linearGradient>
-            </defs>
-        </svg>
+        <header>
+            <flash-message></flash-message>
+            <svg class="absolute z-0">
+                <defs>
+                    <linearGradient x1="0%" y1="0%" x2="100%" y2="200%" id="Gradient1" >
+                        <stop offset="10%" class="gradient-10"/>
+                        <stop offset="30%" class="gradient-30"/>
+                        <stop offset="100%" class="gradient-100"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </header>
         <nav-bar></nav-bar>
         <section id="cover-section">
             <cover-section></cover-section>

@@ -17,7 +17,7 @@ class CreateCommentsTable extends Migration
             $table->bigIncrements('id');
             $table->string('firstName');
             $table->string('lastName');
-            $table->string('tel');
+            $table->string('phone');
             $table->string('email');
             $table->mediumText('message');
             $table->timestamps();

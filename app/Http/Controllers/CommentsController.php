@@ -38,12 +38,17 @@ class CommentsController extends Controller
         $comment = request()->validate([
             'firstName' => 'required',
             'lastName' => 'required',
-            'tel' => 'required',
+            'phone' => 'required',
             'email' => 'required|email',
             'message' => 'required|min:10',
         ]);
         Comment::create($comment);
-        return redirect('/');
+
+        if(request()->wantsJson()){
+            return ['title' => 'success' ,'message' => 'Su mensaje ha sido enviado' ];
+        }
+        return;
+        // return redirect('/');
     }
 
     /**

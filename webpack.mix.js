@@ -16,14 +16,14 @@ mix.js('resources/js/app.js', 'public/js')
    .options({
       processCssUrls: false,
       postCss: [require('tailwindcss')],
-  })
-  .override(config => {
-     config.module.rules.find(rule => 
-      rule.test.test('.svg')
-      ).exclude = /\.svg$/;
+   })
+   .override(config => {
+         config.module.rules.find(rule => 
+            rule.test.test('.svg')
+         ).exclude = /\.svg$/;
 
-      config.module.rules.push({
-         test: /\.svg$/,
-         use: [{ loader:'html-loader' }]
-      })
-  });
+         config.module.rules.push({
+            test: /\.svg$/,
+            use: [{ loader:'html-loader' }]
+         })
+   });

@@ -31,6 +31,7 @@ Vue.component('button-component', require('./components/Button.vue').default);
 Vue.component('inline-svg', require('./components/InlineSvg.js').default);
 Vue.component('visible-component', require('./components/Visible.vue').default);
 Vue.component('stepcard-component', require('./components/StepCard.vue').default);
+Vue.component('flash-message', require('./components/FlashMessage.vue').default);
 
 // page sections
 Vue.component('cover-section', require('./sections/Cover.vue').default);

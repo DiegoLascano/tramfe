@@ -1,6 +1,6 @@
 <template>
     <div>
-        <form method="POST" action="">
+        <form @submit.prevent="submit">
             <div class="flex flex-col">
                 <div class="flex-1">
                     <div class="section-title">Contacto</div>
@@ -11,14 +11,70 @@
                 </div>
                 <div class="flex-1 flex flex-col -mx-2">
                     <div class="flex flex-col md:flex-row">
-                        <input class="form-input" type="text" name="firstName" id="form-firstname" placeholder="Nombre" required>
-                        <input class="form-input" type="text" name="lastName" id="form-lastname" placeholder="Apellido" required>
+                        <div class="flex-1 flex flex-col">
+                            <input 
+                                type="text" 
+                                @change="clearErrors($event)"
+                                v-model="form.firstName" 
+                                :class="errors.firstName ? 'border border-red-600' : 'border-0'"
+                                class="form-input" 
+                                name="firstName" 
+                                id="form-firstname" 
+                                placeholder="Nombre">
+                            <span class="block text-xs italic text-red-500 ml-2" v-if="errors.firstName" v-text="errors.firstName[0]"></span>
+                        </div>
+                        <div class="flex-1 flex flex-col">
+                            <input 
+                                type="text" 
+                                @change="clearErrors($event)"
+                                v-model="form.lastName" 
+                                :class="errors.lastName ? 'border border-red-600' : 'border-0'"
+                                class="form-input" 
+                                name="lastName" 
+                                id="form-lastname" 
+                                placeholder="Apellido">
+                            <span class="block text-xs italic text-red-500 ml-2" v-if="errors.lastName" v-text="errors.lastName[0]"></span>
+                        </div>
                     </div>
                     <div class="flex flex-col md:flex-row">
-                        <input class="form-input" type="email" name="email" id="form-email" placeholder="E-mail" required>
-                        <input class="form-input" type="tel" name="tel" id="form-tel" placeholder="Telefono" required>
+                        <div class="flex-1 flex flex-col">
+                            <input 
+                                type="email" 
+                                @change="clearErrors($event)"
+                                v-model="form.email" 
+                                class="form-input" 
+                                :class="errors.email ? 'border border-red-600' : 'border-0'"
+                                name="email" 
+                                id="form-email" 
+                                placeholder="E-mail">
+                            <span class="block text-xs italic text-red-500 ml-2" v-if="errors.email" v-text="errors.email[0]"></span>
+                        </div>
+                        <div class="flex-1 flex flex-col">
+                            <input 
+                                type="tel" 
+                                @change="clearErrors($event)"
+                                v-model="form.phone" 
+                                class="form-input" 
+                                :class="errors.phone ? 'border border-red-500' : 'border-0'"
+                                name="phone" 
+                                id="form-tel" 
+                                placeholder="Teléfono">
+                            <span class="block text-xs italic text-red-500 ml-2" v-if="errors.phone" v-text="errors.phone[0]"></span>
+                        </div>
                     </div>
-                    <textarea class="form-input" name="message" id="form-message" rows="6" placeholder="Mensaje" required></textarea>
+                    <div class="flex flex-col flex-1">
+                        <textarea 
+                            name="message" 
+                            @change="clearErrors($event)"
+                            v-model="form.message" 
+                            class="form-input" 
+                            :class="errors.message ? 'border border-red-600' : 'border-0'"
+                            id="form-message" 
+                            rows="6" 
+                            placeholder="Mensaje">
+                        </textarea>
+                        <span class="block text-xs italic text-red-500 ml-2" v-if="errors.message" v-text="errors.message[0]"></span>
+                    </div>
                     <div class="flex justify-end">
                         <button type="submit" class="btn btn-primary text-cyan-050 tracking-wider">
                             Enviar
@@ -48,8 +104,53 @@
 import InlineSvg from './InlineSvg.js';
 export default {
     components:{ InlineSvg },
-    mounted() {
-    }
+    data(){
+        return{
+            form:{
+                firstName: '',
+                lastName: '',
+                phone: '',
+                email: '',
+                message: ''
+            },
+            errors:{},
+            notification:{
+                title: '',
+                message: '',
+            }
+        }
+    },
+    mounted(){
+        console.log(this.errors);
+    },
+    methods: {
+        submit(){
+            axios.post('/comments', this.form)
+                .then(response => {
+                    this.notify(response.data),
+                    this.form.firstName = '',
+                    this.form.lastName= '',
+                    this.form.phone= '',
+                    this.form.email= '',
+                    this.form.message= '',
+                    this.errors = ''
+                })
+                .catch(error => {
+                    this.errors = error.response.data.errors
+                })
+        },
+        notify(data){
+            this.notification.title = data.title;
+            this.notification.message = data.message;
+            this.emitEvent(this.notification);
+        },
+        emitEvent(data){
+            this.$eventBus.$emit('notification-message', data);
+        },
+        clearErrors(event){
+            this.errors[event.target.name].shift();
+        }
+    },
 }
 </script>
 
